@@ -4,35 +4,36 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./public/style/main.css" />
+        <link rel="stylesheet" href="./src/style/main.css" />
         <title>Vite App</title>
     </head>
     <body>
         <div id="image">
             <header>
-                <nav>
-                    <div class="search">
-                        <input
-                            id="input"
-                            type="text"
-                            placeholder="Введите свой город"
-                        />
-                        <button class="btn">Отправить</button>
-                    </div>
+                <div class="search">
+                    <input
+                        id="input"
+                        type="text"
+                        placeholder="Введите свой город"
+                    />
+                    <button class="btn">Отправить</button>
+                </div>
 
-                    <p id="coordinates"></p>
+                <p id="coordinates"></p>
 
-                    <ul class="info-city_ul">
-                        <li class="city"></li>
-                        <li class="temp"></li>
-                        <li class="descript"></li>
-                    </ul>
-                </nav>
+                <ul class="info-city_ul">
+                    <li class="city"></li>
+                    <li class="temp"></li>
+                    <li class="descript"></li>
+                </ul>
+                <p class="text-err_p"></p>
+
                 <div id="block-myCity_div">
                     <p id="My-coordinates_p"></p>
 
                     <p class="myCity_li"></p>
                     <p>Информация о городе</p>
+                    <p class="text-err-myCity_p"></p>
 
                     <ul class="info-block-myCity_ul">
                         <li class="myCity-temp_li"></li>

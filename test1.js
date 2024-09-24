@@ -1,6 +1,6 @@
-import { arr, div, dataText } from './public/js/constans.js';
-import { oneImageShow } from './public/js/getImage.js';
-import { getHour, getDay, getMonth } from './public/js/getClock.js';
+import { arr, div, dataText } from './src/js/constans.js';
+import { oneImageShow } from './src/js/getImage.js';
+import { getHour, getDay, getMonth } from './src/js/getClock.js';
 const API = `2aecb4465f352bc5a3a9145663c40cbd`;
 const coordinates = document.querySelector('#coordinates');
 const myCoordinates = document.querySelector('#My-coordinates_p');
@@ -8,7 +8,8 @@ const myCityTemp = document.querySelector('#myCity-temp_li');
 const apiUrl =
     'https://api.openweathermap.org/data/2.5/weather?units=metric&lang=en';
 const myCity = document.querySelector('#block-myCity_div');
-
+const textErr = document.querySelector('.text-err_p');
+const textErrmyCity = document.querySelector('.text-err-myCity_p');
 function fn() {
     div.style.backgroundImage = `url("${oneImageShow(arr)}")`;
     div.style.padding = '1.25rem';
@@ -33,7 +34,7 @@ function fn() {
                 throw new Error('Ошибка запроса');
             }
             const data = await res.json();
-            console.log(data);
+
             document.querySelector(
                 '.city'
             ).textContent = `Погода в городе${' '}${data.name}`;
@@ -47,14 +48,10 @@ function fn() {
             document.querySelector(
                 '.descript'
             ).textContent = `Облочность -  ${data.weather[0]['description']}`;
-            console.log([
-                data.name,
-                data.main.temp,
-                data.weather[0]['description'],
-            ]);
+
             return [data.name, data.main.temp, data.weather[0]['description']];
         } catch (err) {
-            console.log(err);
+            textErr.textContent = `${err}`;
         }
     }
 
@@ -104,7 +101,7 @@ function fn() {
 
             return [city.name];
         } catch (err) {
-            console.log(err);
+            textErrmyCity.textContent = `${err}`;
         }
     }
 

@@ -16,7 +16,7 @@ export function getDay() {
         month: 'long',
     };
     let days = data.toLocaleDateString('ru-Ru', options);
-    console.log(days);
+
     return days;
 }
 

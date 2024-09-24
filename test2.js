@@ -5,7 +5,7 @@ import {
     spanError,
     btnRemoveAllTask,
     blockDel,
-} from './public/js/constans.js';
+} from './src/js/constans.js';
 
 inputTask.addEventListener('keydown', (e) => {
     if (e.keyCode === 13) {
