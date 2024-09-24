@@ -1,13 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./public/style/main.css" />
+        <title>Vite App</title>
+    </head>
+    <body>
+        <div id="image">
+            <header>
+                <nav>
+                    <div class="search">
+                        <input
+                            id="input"
+                            type="text"
+                            placeholder="Введите свой город"
+                        />
+                        <button class="btn">Отправить</button>
+                    </div>
+
+                    <p id="coordinates"></p>
+
+                    <ul class="info-city_ul">
+                        <li class="city"></li>
+                        <li class="temp"></li>
+                        <li class="descript"></li>
+                    </ul>
+                </nav>
+                <div id="block-myCity_div">
+                    <p id="My-coordinates_p"></p>
+
+                    <p class="myCity_li"></p>
+                    <p>Информация о городе</p>
+
+                    <ul class="info-block-myCity_ul">
+                        <li class="myCity-temp_li"></li>
+                        <li class="myCity-descript_li"></li>
+                    </ul>
+                </div>
+            </header>
+
+            <label for="task">Новая задача</label>
+            <input
+                type="text"
+                placeholder="Введите задачу"
+                id="task"
+                name="task"
+            />
+            <span class="error"></span>
+
+            <form class="list-tasck_form__none">
+                <label for="list_tasck" class="list-task_label"
+                    >Список задач</label
+                >
+
+                <div id="result_div"></div>
+            </form>
+            <h3>Выполненые задачи</h3>
+            <div class="block-task__div_fulfilled">
+                <div class="block-delete_div"></div>
+                <button class="btn_removeAllTasck">
+                    Удалить выполненые задачи
+                </button>
+            </div>
+            <script type="module" src="/test1.js"></script>
+            <script type="module" src="/test2.js"></script>
+
+            <div class="block">
+                <div id="hour"></div>
+                <div id="dataText"></div>
+            </div>
+        </div>
+    </body>
 </html>

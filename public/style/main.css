@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+div {
+    box-sizing: border-box;
+}
+
+#image {
+    width: 100%;
+    height: 953px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.info-city_ul li,
+.info-block-myCity_ul {
+    list-style-type: none;
+}
+
+#hour {
+    color: rgb(180, 241, 12);
+    font-size: 2rem;
+    text-align: center;
+}
+#dataText {
+    color: rgb(180, 241, 12);
+    font-size: 2rem;
+}
+#dataText p {
+    margin: 0px;
+}
+
+.block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.checkboxText {
+    text-decoration: line-through;
+}
+
+#block-myCity_div:checked {
+    display: none;
+}
+.list-task_p__line {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(180, 241, 12);
+}
+.block-list_div {
+    display: block;
+}
+#result_div {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50.4%;
+}
+.block-tasck_div {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    height: 25px;
+    align-items: center;
+}
+.block-tasck_div p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.list-task_p__decoration {
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+.text_p__decoration {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(180, 241, 12);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.blok-tasck_div {
+    display: block;
+}
+.block-delete_div {
+    display: flex;
+    flex-direction: column;
+}
+.block-task__div_fulfilled {
+    position: sticky;
+}
