@@ -1,11 +1,6 @@
 export const data = new Date();
 
-export const arr = [
-    '.src/assets/images/01.jpg',
-    '.src/assets/images/02.jpg',
-    '.src/assets/images/03.jpg',
-    '.src/assets/images/04.jpg',
-];
+export const arr = ['/01.jpg', '/02.jpg', '/03.jpg', '/04.jpg'];
 
 export const div = document.querySelector('#image');
 export const hour = document.querySelector('#hour');

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
 export default defineConfig({
     base: 'https://github.com/Dmitriy267/momentum',
@@ -29,6 +30,7 @@ export default defineConfig({
     resolve: {
         alias: {
             '@js': resolve(__dirname, 'src/assets/js'),
+            '@jpg': resolve(__dirname, 'src/assets/images'),
         },
     },
 });
