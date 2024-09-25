@@ -11,7 +11,7 @@ const myCity = document.querySelector('#block-myCity_div');
 const textErr = document.querySelector('.text-err_p');
 const textErrmyCity = document.querySelector('.text-err-myCity_p');
 function fn() {
-    div.style.backgroundImage = `url("${oneImageShow(arr)}")`;
+    div.style.backgroundImage = `url("/${oneImageShow(arr)}")`;
     div.style.padding = '1.25rem';
 
     setTimeout(getHour(), 1000);
