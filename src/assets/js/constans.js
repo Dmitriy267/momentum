@@ -1,9 +1,9 @@
 export const data = new Date();
 export const arr = [
-    './images/01.jpg',
-    './images/02.jpg',
-    './images/03.jpg',
-    './images/04.jpg',
+    '../images/01.jpg',
+    '../images/02.jpg',
+    '../images/03.jpg',
+    '../images/04.jpg',
 ];
 
 export const div = document.querySelector('#image');
