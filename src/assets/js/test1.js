@@ -1,6 +1,6 @@
-import { arr, div, dataText } from './src/js/constans.js';
-import { oneImageShow } from './src/js/getImage.js';
-import { getHour, getDay, getMonth } from './src/js/getClock.js';
+import { arr, div, dataText } from './constans.js';
+import { oneImageShow } from './getImage.js';
+import { getHour, getDay, getMonth } from './getClock.js';
 const API = `2aecb4465f352bc5a3a9145663c40cbd`;
 const coordinates = document.querySelector('#coordinates');
 const myCoordinates = document.querySelector('#My-coordinates_p');

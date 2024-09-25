@@ -1,7 +1,18 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-    base: 'https://github.com/Dmitriy267/',
+    base: 'https://github.com/Dmitriy267/momentum',
+    root: './src',
+    build: {
+        outDir: '../dist',
+        emptyOutDir: true,
+        rollupOptions: {
+            input: {
+                index: './src/index.html',
+            },
+        },
+    },
+
     server: {
         proxy: {
             '/api': {
@@ -13,6 +24,11 @@ export default defineConfig({
                     });
                 },
             },
+        },
+    },
+    resolve: {
+        alias: {
+            '@js': resolve(__dirname, 'src/assets/js'),
         },
     },
 });
